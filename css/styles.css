@@ -160,7 +160,7 @@ h2 {
 		display: block;
 		width: 100%;
 		height: 100vh;
-		background: url('../images/shoes-desktop.png') no-repeat center center;
+		background: url('../images/desktop-shoes.png') no-repeat center center;
 		background-size: cover;
 		overflow: hidden;
 	}
