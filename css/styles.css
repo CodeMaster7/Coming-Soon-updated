@@ -1,0 +1,207 @@
+:root {
+	--fs-body: 1rem;
+	--primary-color: #2f80ed;
+	--secondary-color: #423a3a;
+	--text-color: #333333;
+	--body-color: #fafafa;
+	--gradient-color: linear-gradient(135deg, #7c7c7c 0%, #2b2b2b 100%);
+
+	/* font family */
+	--ff-primary: 'AdiHaus', sans-serif;
+	--ff-body: var(--ff-primary);
+
+	/* font weights */
+	--fw-regular: 400;
+	--fw-bold: 700;
+}
+
+body {
+	font-size: var(--fs-body);
+	font-family: var(--ff-body);
+	background-color: var(--body-color);
+}
+
+h1,
+h2 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+.container {
+	text-align: center;
+}
+
+.mobile-logo {
+	padding: 1em;
+}
+
+.mobile-logo__image {
+	margin: auto;
+}
+
+/* RIGHT HALF */
+.right-half {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.right-half__hero-image {
+	width: 100%;
+	max-height: 50vh;
+	margin: 0 auto;
+}
+
+.right-half__hero-image--large {
+	display: none;
+}
+
+/* LEFT HALF */
+.left-half {
+	padding: 0 2rem;
+	background-image: url('../images/waves.png');
+	background-size: cover;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.header-main {
+	display: none;
+}
+
+.left-half__title {
+	font-weight: var(--fw-regular);
+	color: var(--primary-color);
+	line-height: 2.625rem;
+	margin-bottom: 0.625rem;
+	padding-top: 1.875rem;
+}
+
+.left-half__sub-title {
+	font-weight: var(--fw-bold);
+	color: var(--secondary-color);
+	line-height: 3.125rem;
+	margin-bottom: 0.9375rem;
+}
+
+.left-half__text {
+	font-size: 0.875rem;
+	font-weight: var(--fw-regular);
+	color: var(--text-color);
+	line-height: 1.75rem;
+	margin-bottom: 1.875rem;
+}
+
+/* FORM */
+.left-half__form {
+	display: flex;
+	margin-bottom: 4.9375rem;
+}
+
+.left-half__form-input {
+	flex: 1;
+	width: calc(100% - 64px);
+	padding: 0.6875rem 1.25rem;
+	border: 1px solid #ccc;
+	border-radius: 0.1875rem;
+	outline: none;
+}
+
+.left-half__form-button {
+	font-size: 30px;
+	width: calc(100% - 247px);
+	max-width: 64px;
+	border: 1px solid var(--gradient-color);
+	border-radius: 0.1875rem;
+	background: var(--gradient-color);
+	box-shadow: 0px 15px 20px rgba(66, 58, 58, 0.15);
+	color: #fff;
+	cursor: pointer;
+}
+
+.arrow {
+	height: 12px;
+	width: 12px;
+	border: 2px solid white;
+	margin: 0 auto;
+	transform: rotate(-45deg);
+	border-top: none;
+	border-left: none;
+}
+
+/* LARGE SCREEN SIZES */
+@media (min-width: 48em) {
+	:root {
+		--fs-body: var(--fs-500);
+	}
+	h1,
+	h2 {
+		font-size: 4rem;
+	}
+	.header-main {
+		margin: 50px 0 137px;
+		padding: 0;
+		display: block;
+	}
+	.container {
+		display: flex;
+		text-align: center;
+	}
+	.right-half {
+		flex: 1;
+		order: 2;
+        max-width: 50%;
+        margin: 0;
+	}
+	.right-half__hero-image {
+		display: none;
+	}
+	.right-half__hero-image--large {
+		display: block;
+		width: 100%;
+		height: 100vh;
+		background: url('../images/shoes-desktop.png') no-repeat center center;
+		background-size: cover;
+		overflow: hidden;
+	}
+	.left-half {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		flex: 1;
+		order: 1;
+		padding: 0 2rem;
+        max-width: 50%;
+        margin: 0;
+	}
+	.main-container {
+		max-width: 480px;
+		position: relative;
+		top: -8%;
+		margin: auto;
+	}
+	.left-half__container {
+		max-width: 480px;
+		margin: auto;
+	}
+	.left-half__title {
+		line-height: 4rem;
+		margin: 0;
+		width: 45%;
+	}
+	.left-half__sub-title {
+		line-height: 4.4375rem;
+		width: 40%;
+	}
+	.left-half__text {
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+		margin-bottom: 2.5em;
+	}
+	.left-half__form-button {
+		max-width: 100px;
+	}
+	.mobile-logo {
+		display: none;
+	}
+}
