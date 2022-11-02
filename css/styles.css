@@ -131,9 +131,6 @@ h2 {
 
 /* LARGE SCREEN SIZES */
 @media (min-width: 48em) {
-	:root {
-		--fs-body: var(--fs-500);
-	}
 	h1,
 	h2 {
 		font-size: 4rem;
@@ -145,7 +142,7 @@ h2 {
 	}
 	.container {
 		display: flex;
-		text-align: center;
+        text-align: left;
 	}
 	.right-half {
 		flex: 1;
